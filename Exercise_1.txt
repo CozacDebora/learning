@@ -1,0 +1,24 @@
+Whether you are calculating the speed of a car, estimating how far a sound wave has travelled, or working out how long it takes light to reach the Earth, the relationship between speed, distance and time is used in many areas of science, engineering and everyday life.
+
+The relationship is described using the following formula: Speed=Distance÷Time
+
+The same formula can be rearranged depending on which value we need to calculate:
+
+Speed: s=d/t
+Distance: d=s×t
+Time: t=d/s
+
+In this Python challenge, you will create one program capable of performing all three calculations.
+Your program should start by asking the user what they would like to calculate:
+
+What would you like to calculate?
+s - Speed
+d - Distance
+t - Time
+
+The program will then need to make a decision based on the user’s answer.
+
+
+For example, if the user chooses distance, the program should ask them to enter a speed and a time. It can then calculate the missing distance using: distance=speed×time
+
+Poti crea un fisier .py pe care sa il adaugi langa acest pe branchul curent.
