@@ -1,0 +1,1 @@
+"Am o listă de sesizări. Fiecare are un loc unde scriu care e problema. Când bifez că sesizarea e rezolvată, nu mai vreau să văd textul cu problema — e degeaba pe ecran atunci. Se poate?"
