@@ -1,0 +1,12 @@
+Creaza un modul Odoo 19 numit learn_library, standalone (depinde doar de base), care sa gestioneze o listă de carti.
+
+Cerinte:
+
+Un singur model, library.book, cu urmatoarele fielduri: titlu (text, obligatoriu), autor (text), gen (selectie dintr-o lista fixa de valori), data publicarii, numar de pagini si un checkbox de disponibilitate.
+O vizualizare list si una form pentru gestionarea cartilor.
+Un meniu propriu "Biblioteca" cu o intrare care deschide lista de carti.
+Drepturi de acces pentru utilizatorii interni (citire, scriere, creare, stergere).
+
+Obiectiv de invatare: sa intelegi ce fisiere compun un modul, la ce serveste fiecare si cum se leaga intre ele — manifest, model, view-uri, securitate, meniuri.
+
+Cand termini, verifica: modulul se instaleaza fara erori, meniul apare, poti crea o carte si o vezi in listă.
