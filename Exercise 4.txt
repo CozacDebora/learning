@@ -1,0 +1,25 @@
+Un mini-magazin: produse cu stoc și un coș de cumpărături care le adună.
+
+Clasa Produs:
+
+nume (str), pret (float), stoc (int) — câte bucăți sunt disponibile
+afiseaza() — tipărește nume, preț, stoc
+
+Clasa Cos:
+
+ține o colecție de produse adăugate, fiecare cu cantitatea lui
+adauga(produs, cantitate):
+refuză dacă cantitate <= 0
+refuză dacă produs.stoc < cantitate (nu ai destul pe raft)
+altfel: scade din produs.stoc și pune în coș; dacă produsul e deja în coș, cumulează cantitatea
+elimina(nume_produs) — scoate complet produsul din coș și pune stocul înapoi
+total() — returnează suma pret * cantitate pe tot coșul
+afiseaza() — listează fiecare linie (produs, cantitate, subtotal) + totalul general
+
+Scriptul principal trebuie să:
+
+creeze 3-4 produse cu prețuri și stocuri diferite
+adauge câteva produse în coș, inclusiv un caz care depășește stocul (ca să vezi refuzul)
+adauge același produs de două ori (ca să testezi cumularea)
+afișeze coșul cu totalul
+elimine un produs și reafișeze
