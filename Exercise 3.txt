@@ -1,0 +1,20 @@
+Modelează un cont bancar folosind o clasă ContBancar, apoi creează mai multe conturi și mută bani între ele.
+
+Clasa ContBancar are proprietățile:
+
+titular — numele proprietarului (string)
+sold — banii din cont (număr, pornește de la o valoare inițială)
+
+Și metodele:
+
+depune(suma) — adaugă suma la sold; refuză sumele ≤ 0
+retrage(suma) — scade suma din sold; refuză dacă suma e ≤ 0 sau mai mare decât soldul
+transfera(suma, alt_cont) — mută suma din contul curent în alt_cont
+afiseaza() — tipărește titularul și soldul curent
+
+Scriptul principal trebuie să:
+
+Creeze cel puțin 2 conturi cu titulari și solduri diferite
+Facă o depunere și o retragere pe unul dintre ele
+Facă un transfer dintr-un cont în celălalt
+Afișeze soldurile finale ale ambelor conturi
