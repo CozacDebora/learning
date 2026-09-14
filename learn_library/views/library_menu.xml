@@ -9,7 +9,7 @@
 
     <menuitem
         id="meniuCarti"
-        name="Cărți"
+        name="Carti"
         parent="formularCarte"
         action="deschideListaCarti"
     />
