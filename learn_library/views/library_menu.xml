@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <menuitem
+        id="formularCarte"
+        name="Biblioteca"
+    />
+
+    <menuitem
+        id="meniuCarti"
+        name="Cărți"
+        parent="formularCarte"
+        action="deschideListaCarti"
+    />
+
+</odoo>
