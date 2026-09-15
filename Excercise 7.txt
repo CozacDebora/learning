@@ -1,0 +1,18 @@
+Creează un modul care extinde partenerul standard. Un partener trebuie să aibă un număr de puncte de loialitate și un nivel (bronze / silver / gold) care se calculează automat din puncte. Nivelul trebuie să poată fi folosit la filtrare și grupare. Câmpurile trebuie să fie vizibile în fișa partenerului.
+
+Criterii de acceptare:
+
+Punctele pornesc de la 0 la un partener nou.
+Nivelul se recalculează singur când se schimbă punctele (nu se editează manual).
+Se poate grupa lista de parteneri după nivel.
+
+Modulul B — partner_loyalty_card
+Creează un modul separat, care depinde de primul, și introduce un concept nou: cardul de loialitate. Un card aparține unui partener; un partener poate avea mai multe carduri. Fiecare card are un număr unic. Din fișa partenerului trebuie să se vadă câte carduri are și să se poată deschide lista lor.
+
+Criterii de acceptare:
+
+Nu pot exista două carduri cu același număr.
+Ștergerea unui partener îi șterge cardurile.
+Din partener există un buton care duce la cardurile lui.
+
+Bonus: un buton care adaugă puncte partenerului; o regulă prin care fiecare user vede doar cardurile companiei lui.
