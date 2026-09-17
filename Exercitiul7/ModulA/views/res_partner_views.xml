@@ -12,15 +12,59 @@ Nivelul se recalculează singur când se schimbă punctele (nu se editează manu
 
 
 <odoo>
+<!-- Modific res.partner -->
     <record id="veziResPartner" model="ir.ui.view">
         <field name="name">veziResPartner</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
-        <field name="arch" type="xml"> </field>
+
+        <field name="arch" type="xml">
+
+          <xpath expr="//field[@name="category_id"]"position = "after">
+            <field name="puncteLoialitate"/>
+            <field name="nivelDeLoialitate"/>
+          </xpath>
+
+        </field>
     </record>
+
+<!-- Modific lista res.partner -->
     <record id="veziListaResPartner" model = "ir.ui.view">
         <field name = "name">veziListaResPartner</field>
         <field name = "model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+
+        <field name="arch" type="xml">
+
+          <xpath expr="//field[@name="category_id"]"position = "after">
+            <field name="puncteLoialitate"/>
+            <field name="nivelDeLoialitate"/>
+          </xpath>
+
+        </field>
+            
+    </record>
+
+    <record id="cautareResPartener" model = "ir.ui.view">
+        <field name = "name">cautareResPartener</field>
+        <field name = "model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_filter"/>
+
+        <field name="arch" type="xml">
+
+          <xpath expr="//search" position="inside">
+          
+            <group expand="0" string="Group By">
+
+                <filter 
+                     name = "groupByNivelDeLoialitate"
+                     string = "Nivel de loialitate"
+                     context="{'group_by': 'nivelDeLoialitate'}"
+                />
+
+            </group>
+          </xpath>
+        </field>
             
     </record>
 
