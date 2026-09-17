@@ -1,0 +1,28 @@
+#Creează un modul care extinde partenerul standard. 
+Un partener trebuie să aibă un număr de puncte de loialitate și un nivel 
+(bronze / silver / gold) care se calculează automat din puncte. 
+Nivelul trebuie să poată fi folosit la filtrare și grupare. 
+Câmpurile trebuie să fie vizibile în fișa partenerului.
+
+Criterii de acceptare:
+
+Punctele pornesc de la 0 la un partener nou.
+Nivelul se recalculează singur când se schimbă punctele (nu se editează manual).
+#Se poate grupa lista de parteneri după nivel.
+
+
+<odoo>
+    <record id="veziResPartner" model="ir.ui.view">
+        <field name="name">veziResPartner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml"> </field>
+    </record>
+    <record id="veziListaResPartner" model = "ir.ui.view">
+        <field name = "name">veziListaResPartner</field>
+        <field name = "model">res.partner</field>
+            
+    </record>
+
+
+</odoo>
