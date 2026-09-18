@@ -20,7 +20,7 @@ Nivelul se recalculează singur când se schimbă punctele (nu se editează manu
 
         <field name="arch" type="xml">
 
-          <xpath expr="//field[@name="category_id"]"position = "after">
+          <xpath expr="//field[@name='category_id']" position ="after">
             <field name="puncteLoialitate"/>
             <field name="nivelDeLoialitate"/>
           </xpath>
@@ -36,7 +36,7 @@ Nivelul se recalculează singur când se schimbă punctele (nu se editează manu
 
         <field name="arch" type="xml">
 
-          <xpath expr="//field[@name="category_id"]"position = "after">
+          <xpath expr="//field[@name='category_id']" position="after">
             <field name="puncteLoialitate"/>
             <field name="nivelDeLoialitate"/>
           </xpath>
@@ -53,7 +53,26 @@ Nivelul se recalculează singur când se schimbă punctele (nu se editează manu
         <field name="arch" type="xml">
 
           <xpath expr="//search" position="inside">
-          
+
+                <filter 
+                     name="filterBronz"
+                     string="Bronz"
+                     domain="[('nivelDeLoialitate', '=', 'bronz')]"
+                />   
+
+                <filter 
+                     name="filterArgint"
+                     string="Argint"
+                     domain="[('nivelDeLoialitate', '=', 'argint')]"
+                />
+
+
+                <filter 
+                     name="filterAur"
+                     string="Aur"
+                     domain="[('nivelDeLoialitate', '=', 'aur')]"
+                />
+
             <group expand="0" string="Group By">
 
                 <filter 
@@ -63,6 +82,7 @@ Nivelul se recalculează singur când se schimbă punctele (nu se editează manu
                 />
 
             </group>
+
           </xpath>
         </field>
             
